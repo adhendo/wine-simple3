@@ -10,6 +10,9 @@ import PasswordForgetPage from '../PasswordForget';
 import {withAuthentication} from '../Session';
 import SignInPage from '../SignIn';
 import SignUpPage from '../SignUp';
+import WineryPage from '../WineryPage';
+
+
 
 
 
@@ -21,6 +24,7 @@ const App = () => (
           <hr />
           
           <Route exact path={ROUTES.LANDING} component={LandingPage} />
+          <Route path={ROUTES.WINERYPAGE} component={WineryPage} />
           <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
           <Route path={ROUTES.SIGN_IN} component={SignInPage} />
           <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />

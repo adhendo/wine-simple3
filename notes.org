@@ -1,0 +1,39 @@
+-----------------------------------------
+* DONE - On click to winery page *
+
+    * TODO - Map Click to Winery ID! *
+
+    --OR/AND (react-router?)--
+
+* TODO (test) - Modal open on click -> then click to winery page or click outside modal to close modal. 
+
+-----------------------------------------
+
+* TODO - Search Functions, Algolia? or basic queries through firestore 
+
+----------------------------------------
+
+* TODO - SubHeader with Get Current Location/GeoLocation functionality on click ("popular wineries in =>(location)
+
+----------------------------------------
+
+* TODO - Tasting Room, Wineries Filter page builds *
+
+* TODO - Discover Page builds *
+
+----------------------------------------
+
+* TODO - Map Functions *
+    {-----------------------------------
+        -Markers w logo and geo lat/long spots
+        -Callouts for clicks of markers
+        -Map callout click to winerypage
+    ------------------------------------}
+----------------------------------------
+
+* TODO - Database *
+        (populate with real data and fields needed ungggh)
+
+----------------------------------------
+
+

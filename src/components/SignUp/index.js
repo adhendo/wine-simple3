@@ -53,12 +53,13 @@ class SignUpFormBase extends Component {
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
-        // Create a user in your Firebase realtime database
+        // Create a user in your Firestore 
         return this.props.firebase
           .user(authUser.user.uid)
           .set({
             username,
             email,
+            roles,
           },
           { merge: true },
           );
@@ -84,16 +85,19 @@ class SignUpFormBase extends Component {
   onChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
+  //onChange for admin role being assigned...
+  onChangeCheckbox = event => {
+    this.setState({ [event.target.name]: event.target.checked });
+  };
 
   render() {
-
     //render method captures input info
-   
     const {
       username,
       email,
       passwordOne,
       passwordTwo,
+      isAdmin,
       error,
     } = this.state;
 
@@ -135,6 +139,15 @@ class SignUpFormBase extends Component {
           type="password"
           placeholder="Confirm Password"
         />
+        <label>
+          Admin:
+          <input 
+            name="isAdmin"
+            type="checkbox"
+            checked={isAdmin}
+            onChange={this.onChangeCheckbox}
+          />
+        </label>
         <button disabled={isInvalid} type="submit">Sign Up</button>
         {error && <p>{error.message}</p>}
 

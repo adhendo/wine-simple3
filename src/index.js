@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './bootstrap.min.css';
 import App from './components/App';
 import Firebase,{FirebaseContext} from './components/Firebase';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-
 
 
 ReactDOM.render(

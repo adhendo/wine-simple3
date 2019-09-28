@@ -5,3 +5,7 @@ export const HOME = '/home';
 export const ACCOUNT = '/account';
 export const ADMIN = '/admin';
 export const PASSWORD_FORGET = '/pw-forget';
+export const WINERYPAGE ='/winerypage';
+export const WINERIESFILT = '/wineries';
+export const TASTINGROOMFILT = '/tastingrooms';
+export const DISCOVER = '/discover';

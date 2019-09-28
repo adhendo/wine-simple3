@@ -17,7 +17,7 @@ class Firebase {
 
     /* Helper */
 
-    this.fielValue = app.firestore.FieldValue;
+    this.fieldValue = app.firestore.FieldValue;
     this.emailAuthProvider = app.auth.EmailAuthProvider
 
     /* Firebase APIs */
@@ -59,7 +59,7 @@ class Firebase {
             const dbUser = snapshot.data();
 
             // default empty roles
-            if (!dbUser.roles) {
+            if ( dbUser && !dbUser.roles) {
               dbUser.roles = {};
             }
 
@@ -79,13 +79,13 @@ class Firebase {
       }
     });  
 
-  //UserAPI
+  //UserAPI firestore
 
   user = uid => this.db.doc(`users/${uid}`);
 
   users = () => this.db.collection('users');
 
-  //Wineries API
+  //Wineries API firestore
 
   winery = uid => this.db.doc(`wineries/${uid}`);
 

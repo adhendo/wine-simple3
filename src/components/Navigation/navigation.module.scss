@@ -1,0 +1,93 @@
+.btnPrimary {
+	color: #fff;
+	background-color: rgba(60, 150, 54, 0.459);
+	border-color: #ffffff;
+	border-radius: 0.2rem;
+	margin-right: 0.2rem;
+}
+.btnPrimary:hover {
+	color: #3d9636;
+	background-color: #ffffff;
+	border-color: rgba(60, 150, 54, 0.212);
+}
+.btnPrimary.focus,
+.btnPrimary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btnSecondary {
+	display: block;
+	color: #fff;
+	background-color: #3d9636;
+	border-color: #ffffff;
+	border-radius: 0.2rem;
+	margin-right: 0.2rem;
+}
+
+.btnSecondary:hover {
+	color: #3d9636;
+	background-color: #ffffff;
+	border-color: #3d9636;
+}
+
+.btnSecondaryCollapser {
+	display: block;
+	color: #fff;
+	background-color: #3d9636;
+	border-color: #ffffff;
+	border-radius: 0.2rem;
+	margin-left: 2.5rem;
+}
+
+@media screen and (min-width: 499px) {
+	.btnSecondaryCollapser {
+		display: none;
+	}
+	#leftside > button {
+		display: none;
+	}
+}
+
+.btnSecondaryCollapser:hover {
+	color: #3d9636;
+	background-color: #ffffff;
+	border-color: #3d9636;
+}
+.btnSecondaryCollapser.focus,
+.btnSecondaryCollapser:focus {
+	box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.navContainer {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	-ms-flex-pack: center !important;
+	justify-content: center !important;
+	-ms-flex-pack: justify !important;
+	justify-content: space-around !important;
+	margin: 1em 3em 0 3em;
+	border-bottom: 1px solid #d8d9db;
+}
+
+.logoSearch {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.navButtons {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	margin-bottom: 0.2rem;
+}
+
+.navButtons:first-child {
+	margin-right: 1;
+}

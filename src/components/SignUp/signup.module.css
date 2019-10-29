@@ -1,0 +1,49 @@
+.paper {
+  -webkit-box-shadow: 0 2px 8px rgba(153, 153, 153, 0.4);
+          box-shadow: 0 2px 8px rgba(153, 153, 153, 0.4);
+}
+
+.primaryWidthContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calcMargin {
+  margin-top: calc(2 * 48px);
+}
+
+.pageBody {
+  margin: 2rem calc(-1 * 1rem);
+}
+
+.mainContainer {
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    width: 640px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainContainer {
+    overflow: hidden;
+  }
+}
+
+.mainInherit {
+  max-width: inherit;
+  width: inherit;
+}
+/*# sourceMappingURL=signup.module.css.map */

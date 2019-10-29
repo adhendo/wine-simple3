@@ -1,0 +1,475 @@
+aside {
+  display: block;
+}
+
+.wholePage {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+
+.primaryWidthContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calcMargin {
+  margin-top: calc(-1 * 48px);
+}
+
+.headImageContainer {
+  position: relative;
+}
+
+.headerNoImage {
+  background: #2d333f;
+  background-position: center;
+}
+
+.headerImage {
+  background-size: cover;
+  background-position: center;
+  height: 306px;
+  background-image: url(https://resizer.otstatic.com/v2/photos/wide-huge/3/26822404.jpg);
+}
+
+@media (min-height: 800px) {
+  .headerImage {
+    height: 459px;
+  }
+}
+
+@media (min-height: 1025px) {
+  .headerImage {
+    height: 612px;
+  }
+}
+
+@media (max-width: 1055px) {
+  .headerImage {
+    height: 230px;
+  }
+}
+
+.mainContainer {
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    width: 640px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainContainer {
+    overflow: hidden;
+  }
+}
+
+.mainInherit {
+  max-width: inherit;
+  width: inherit;
+}
+
+.zeroHeight {
+  height: 0px;
+}
+
+.widthInherit {
+  width: inherit;
+}
+
+.overviewContainer {
+  padding: 2rem 1rem 1rem;
+}
+
+@media (max-width: 499px) {
+  .overviewContainer {
+    padding: 0rem 1rem 1rem;
+  }
+}
+
+.secondaryInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ratingsReviewsMini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0;
+}
+
+.ratingsContainer {
+  margin-top: 0px;
+  margin-right: 0.5rem;
+  float: right;
+}
+
+.reviewsContainer {
+  margin-right: 0.25rem;
+}
+
+.attributeFont {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.attribute {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 0 0 0.25rem;
+}
+
+.miniInfo {
+  margin-left: 0.5rem;
+}
+
+.miniIcon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.miniSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-overflow: ellipsis;
+  text-decoration: inherit;
+}
+
+.unorderedListHead {
+  height: 48px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 2px 2px 0 0;
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.unorderedListHead::before {
+  content: '';
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  left: 1rem;
+  border-bottom: 1px solid #d8d9db;
+}
+
+.unorderedListHead li:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.unorderedListHead li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 499px) {
+  .unorderedListHead {
+    height: 48px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 2px 2px 0 0;
+    padding: 0 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .unorderedListHead::before {
+    content: '';
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    border-bottom: 1px solid #d8d9db;
+    position: relative;
+  }
+  .unorderedListHead li:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+  .unorderedListHead li:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+.listLinkStyler {
+  color: #2d333f;
+  padding: 14px 0.5rem;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.listLinkStyler:hover {
+  color: #3d9636;
+}
+
+.listLinkStyler:hover::before {
+  content: '';
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0;
+  left: 0.5rem;
+  border-bottom: 2px solid #3d9636;
+}
+
+@media (min-width: 499px) {
+  .listLinkStyler {
+    color: #2d333f;
+    padding: 4px 0.5rem;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .listLinkStyler:hover {
+    color: #3d9636;
+  }
+  .listLinkStyler:hover::before {
+    content: '';
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0;
+    left: 0.5rem;
+    border-bottom: 2px solid #3d9636;
+  }
+  .listLinkFont {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+}
+
+.listLinkFont {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.startingActiveLink {
+  color: #3d9636;
+}
+
+.linksPositionFixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 20;
+  z-index: 11;
+}
+
+@media (max-width: 499px) {
+  .linksPositionFixed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 11;
+    position: relative;
+  }
+}
+
+.bookmarkerContainer {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.bookmarkerTextAlign {
+  text-align: center;
+}
+
+.buttonWidth {
+  width: 10rem;
+}
+
+.buttonFocusHover {
+  padding: calc(0.75rem - 1px) calc(1rem - 1px);
+  border: 1px solid #d8d9db;
+  text-decoration: none;
+}
+
+.buttonFocusHover:focus {
+  outline: none;
+}
+
+.buttonFocusHover:hover,
+.buttonFocusHover:focus {
+  border: 2px solid #3d9636;
+  padding: calc(0.75rem - 2px) calc(1rem - 2px);
+}
+
+.buttonFont {
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 10rem;
+}
+
+.buttonStyler {
+  font-weight: 500;
+  border-radius: 2px;
+  color: #2d333f;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.withinButtonCenter {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.withinButtonFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-overflow: ellipsis;
+  text-decoration: inherit;
+}
+
+.iconBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.iconBox > svg {
+  vertical-align: middle;
+}
+
+.iconBoxTwo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.iconBoxTwo > svg {
+  vertical-align: bottom;
+}
+
+.bookmarkLabeler {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 0 0 0.25rem;
+}
+
+.bookmarkFont {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.wineryMainInfoContainer {
+  margin: 1rem 0 2rem;
+}
+
+.wineryTitleContainer {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d8d9db;
+  margin: 0 0 1rem;
+}
+
+.wineryTitleFont {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.wineryTitleStyle {
+  color: #2d333f;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tagContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tagLabel {
+  margin-top: 2px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tag {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #6f737b;
+  text-transform: capitalize;
+  border: 1px solid #d8d9db;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8px;
+  padding: 5px 16px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  border: 2px solid #3d9636;
+  padding: 4px 15px;
+}
+
+.anchorStyle {
+  text-decoration: none;
+  color: #2d333f;
+}
+
+.address {
+  margin-right: 1rem;
+}
+
+.phone {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.infoItem {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.infoItemAligner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.5rem;
+}
+/*# sourceMappingURL=winerypage.module.css.map */

@@ -1,0 +1,16 @@
+.btnSecondary {
+  display: block;
+  color: #fff;
+  background-color: #3d9636;
+  border-color: #ffffff;
+  border-radius: 0.2rem;
+  margin-right: 0.2rem;
+  height: 28px;
+}
+
+.btnSecondary:hover {
+  color: #3d9636;
+  background-color: #ffffff;
+  border-color: #3d9636;
+}
+/*# sourceMappingURL=signout.module.css.map */

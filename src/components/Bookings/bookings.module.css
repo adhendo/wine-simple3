@@ -1,0 +1,389 @@
+.ant-form-item-label {
+  position: relative;
+  top: 25px;
+  width: 33.33333333%;
+}
+
+.ant-form-item-control-wrapper {
+  width: 66.66666667%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: normal;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 350px;
+  text-align: left;
+  margin-top: -20px;
+}
+
+.field-container {
+  height: 65px;
+}
+
+.submit-container {
+  text-align: center;
+  margin-top: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.submitContainer {
+  text-align: center;
+  margin-top: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paper {
+  -webkit-box-shadow: 0 2px 8px rgba(153, 153, 153, 0.4);
+          box-shadow: 0 2px 8px rgba(153, 153, 153, 0.4);
+}
+
+.reservationModuleContainer {
+  margin: 2rem calc(-1 * 1rem);
+}
+
+.formTitle {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #fff;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  text-align: center;
+  padding: 0 3rem;
+  position: relative;
+}
+
+.titleFont {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.titleStyle {
+  font-size: 21px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  border-bottom: 1px solid #d8d9db;
+  margin: 0;
+  font-family: Rubik-light, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formItem {
+  margin-left: 2rem;
+}
+
+.formItemSetter {
+  padding: 0.5rem 3rem 1rem;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.formPickerAligner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.pickerFonts {
+  font-family: Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bookingButton {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  background-color: #3d9636;
+  color: #fff;
+  border: none;
+}
+
+.bookingButton:hover,
+.bookingButton:focus {
+  background-color: #40a039b9;
+}
+
+.buttonFont {
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 18rem;
+}
+
+.buttonFontStyler {
+  font-weight: 500;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #3d9636;
+}
+
+.formButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto 0;
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1055px) {
+  .formButtonContainer {
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  }
+}
+
+.maxHeight {
+  max-height: 0;
+}
+
+.maxHeight150 {
+  max-height: 150px;
+}
+
+.maxHeightEase1 {
+  -webkit-transition: max-height 0.2s ease 0s;
+  transition: max-height 0.2s ease 0s;
+  overflow: hidden;
+}
+
+.pickersContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pickersItem {
+  padding: 1px;
+}
+
+.dateTimeItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex: 1 100%;
+      flex: 1 100%;
+  -webkit-box-flex: 1;
+}
+
+@media (max-width: 1055px) {
+  .dateTimeItem {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+.blankBottom {
+  -webkit-transition: max-height 0.2s ease 0s;
+  transition: max-height 0.2s ease 0s;
+  overflow: hidden;
+}
+
+.selector {
+  border: none;
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  width: 80%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d8d9db;
+}
+
+.iconStyle {
+  color: 'rgb(61, 150, 54)';
+}
+
+.formPickerPadder {
+  padding-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+}
+
+.formPickerContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.moduleItem {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 50%;
+      flex: 1 50%;
+  margin-left: 0.5rem;
+}
+
+.moduleItem:first-child {
+  margin-left: 0;
+}
+
+.dateTimeRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 100%;
+      flex: 1 100%;
+  margin-top: 0.5rem;
+  -webkit-box-flex: 1;
+}
+
+.moduleLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+}
+
+.todayLabel {
+  font-family: inherit;
+  font-size: 0.875rem;
+  float: left;
+}
+
+.anySelectorArea {
+  cursor: pointer;
+  border-right: none;
+  position: relative;
+  height: 35px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #d8d9db;
+  outline: none;
+}
+
+.anySelectorArea:hover,
+.anySelectorArea:focus {
+  border-bottom: 2px solid #3d9636;
+}
+
+.selectAndItemLabel,
+.selectAndItemLabel:focus {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #fff;
+  font-size: 0.875rem;
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d8d9db;
+}
+
+.selectAndItemLabel:hover,
+.selectAndItemLabel:focus {
+  border-bottom: 2px solid #3d9636;
+}
+
+.selectAndItemLabel::-ms-expand {
+  display: none;
+}
+
+.selectAndItemLabelTwo {
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: calc(100% - 2px);
+  padding-top: 2px;
+  border: 0;
+}
+
+.selectAndItemLabelTwo:hover {
+  border: 0;
+}
+
+.pointerOne {
+  pointer-events: none;
+}
+
+.dateSelectorButton {
+  border: none;
+  border-bottom: 1px solid #d8d9db;
+}
+
+.dateSelectorButton:hover,
+.dateSelectorButton:focus {
+  border-bottom: 2px solid #3d9636;
+}
+
+.dateTodayLabel {
+  font-family: inherit;
+  font-size: 0.875rem;
+  float: left;
+}
+
+.dateTodayLabel:hover {
+  border: 0;
+}
+
+.dropDownIcon {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  height: 100%;
+  width: 0.5rem;
+  fill: #3d9636;
+  pointer-events: none;
+}
+/*# sourceMappingURL=bookings.module.css.map */

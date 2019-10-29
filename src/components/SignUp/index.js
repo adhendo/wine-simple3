@@ -4,13 +4,21 @@ import {compose} from 'recompose';
 import * as ROLES from '../../constants/roles';
 import * as ROUTES from '../../constants/routes';
 import {withFirebase} from '../Firebase';
-
+import styles from './signup.module.scss';
 
 const SignUpPage = () => (
-  <div>
-    <h1>SignUp</h1>
-    <SignUpForm />
-  </div>
+  <div className={`${styles.primaryWidthContainer} ${styles.calcMargin}`}>
+    <main className={styles.mainContainer}>
+        <div className={styles.mainInherit}>
+          <div className={styles.pageBody}>
+            <div className={styles.paper}>
+                <h1>SignUp</h1>
+                <SignUpForm />
+            </div>
+          </div>
+        </div>
+    </main>   
+  </div> 
 );
 
 //initializing the state

@@ -11,6 +11,8 @@ const config = {
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
 };
 
+
+
 class Firebase {
   constructor() {
     app.initializeApp(config);
@@ -79,17 +81,38 @@ class Firebase {
       }
     });  
 
-  //UserAPI firestore
+  //Users API ----->
+
+  userBookings = uid => this.db.doc(`users/${uid}/bookings/${uid}`);
 
   user = uid => this.db.doc(`users/${uid}`);
 
   users = () => this.db.collection('users');
 
-  //Wineries API firestore
+  //Wineries API ----->
+  
+  wineryBookings = uid => this.db.doc(`wineries/${uid}/bookings/${uid}`);
 
   winery = uid => this.db.doc(`wineries/${uid}`);
 
   wineries = () => this.db.collection('wineries');
+
+  //Bookings API ----->
+
+  booking = uid => this.db.doc(`bookings/${uid}`);
+  
+  bookings = () => this.db.collection('bookings');
+
+  //Tags API --------->
+  tags = uid => this.db.doc(`tags/${uid}`);
+
+  tags = () => this.db.collection('tags');
+
+  //Queries ----->
+  
+  
+
+
 }
 
 export default Firebase;

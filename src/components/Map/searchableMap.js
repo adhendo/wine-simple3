@@ -50,7 +50,7 @@ class SearchableMap extends Component {
     render(){
       const { viewport, searchResultLayer} = this.state
       return (
-        <div style={{ height: '50vh'}}>
+        <div style={{ height: '38vh'}}>
           <MapGL 
             ref={this.mapRef}
             {...viewport}

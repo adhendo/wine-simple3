@@ -5,6 +5,7 @@ import * as ROUTES from '../../constants/routes';
 import Search from '../Search';
 import {AuthUserContext} from '../Session';
 import SignOutButton from '../SignOut';
+import styles from './navigation.module.scss';
 
 
 const Navigation = () => (
@@ -18,44 +19,61 @@ const Navigation = () => (
 );
 
 const NavigationAuth = ({ authUser }) => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
+  <React.Fragment>
+  <div className={styles.navContainer}>
+    <div className={styles.logoSearch}>
+      <Link to={ROUTES.LANDING}><h2 style={titleStyle}>winehop</h2></Link>
+      <Search />
+    </div>  
+
+    <div className={styles.navButtons}>
+ 
+      <Link to={ROUTES.HOME}><button className={styles.btnSecondary}>Dashboard</button></Link>
+   
+   
+      <Link to={ROUTES.ACCOUNT}><button className={styles.btnSecondary}>Account</button></Link>
+
     {authUser.roles && !!authUser.roles[ROLES.ADMIN] && (
-    <li>  
-      <Link to={ROUTES.ADMIN}>Admin</Link>
-    </li>
+    
+      <Link to={ROUTES.ADMIN}><button className={styles.btnSecondary}>Admin</button></Link>
+    
     )}
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+  
+    
+      <SignOutButton className={styles.btnSecondary} />
+      </div>
+      
+ 
+  </div>
+  </React.Fragment>
 );
 
-const headStyle= {
-  marginLeft: '3em',
-  marginRight: '3em',
-  marginTop: '1em'
-}
 
 const titleStyle= {
-  color: '#3D9636'
+  color: '#3D9636',
+  fontFamily: 'Rubik',
+  marginBottom: '0.2rem'
 }
 
 
 const NavigationNonAuth = () => (
   <React.Fragment>
-    <div className="row justify-content-center justify-content-between" style={headStyle}>
-      <Link to={ROUTES.LANDING}><h2 style={titleStyle}>winehop</h2></Link>
-      <Search />
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+    <div className={styles.navContainer}>
+
+    <div className={styles.logoSearch}>
+        <Link to={ROUTES.LANDING}><h2 style={titleStyle}>winehop</h2></Link>
+        <Search />
+    </div>    
+   
+      
+      <div className={styles.navButtons}>
+        <Link to={ROUTES.SIGN_UP}><button className={styles.btnSecondary}>Sign Up</button></Link>
+        <Link to={ROUTES.SIGN_IN}><button className={styles.btnPrimary}>Sign In</button></Link>
+        <Link to={ROUTES.DISCOVER}><button className={styles.btnSecondaryCollapser}>Discover</button></Link>
+      </div>
+   
+      
+      
     </div>
   </React.Fragment>
 );

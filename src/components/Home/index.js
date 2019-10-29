@@ -1,12 +1,15 @@
 import React from 'react';
 import {withAuthorization} from '../Session';
+import WineryAccountHomePage from './homepage';
 
 const HomePage = () => (
-  <div>
-    <h1>Home Page</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
-  </div>
+  
+  <React.Fragment>
+    <WineryAccountHomePage />
+  </React.Fragment>
+
 );
+
 
 const condition = authUser => !!authUser;
 

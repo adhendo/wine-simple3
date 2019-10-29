@@ -2,6 +2,10 @@
 * DONE - On click to winery page *
 
     * TODO - Map Click to Winery ID! *
+        -custom hook for accessing firebase?
+        -reusable firebase class component?
+        -or do i need to call firebase in every component that uses it?
+        
 
     --OR/AND (react-router?)--
 
